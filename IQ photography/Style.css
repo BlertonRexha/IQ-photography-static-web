@@ -1,0 +1,193 @@
+html{overflow-y:scroll;}
+
+body
+{
+    background-color:#001012;
+    margin:0; 
+    padding:0; 
+    font-size:13px;
+    font-family:Georgia, "Times New Roman", Times, serif; 
+    color:#919191;
+    
+    
+}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; 
+     font-style:normal; 
+     font-family:Georgia, "Times New Roman", Times, serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+
+nav ul{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;}
+#header, #content, #footer{display:block; width:960px; margin:0 auto; }
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;}
+
+
+form, fieldset, legend{margin:0;
+                       padding:0;
+                       border:none;}
+legend{display:none;}
+input, textarea, select{font-size:12px;
+                         font-family:Georgia,"Times New Roman",Times,serif;}
+
+
+
+
+/*header*/
+.row1, .row1 a{color:#C0BAB6; background-color:#333333;  }
+#header{padding:20px 0; color:#C0BAB6; background-color:#333333; position:static; }
+
+#header #hgroup{float:left;
+                 margin:0 0 20px 5px;}
+#header #hgroup h1, #header #hgroup h2{font-weight:normal; 
+                                       text-transform:none;}
+#header #hgroup h1{font-size:36px; }
+#header #hgroup h2{font-size:13px;}
+#header #hgroup img.icon {width:50px; height:40;  }
+
+#header form{display:block; 
+             width:290px; 
+             float:right; 
+             margin:20px 0; 
+             padding:0;}
+#header form input{display:block; 
+                   float:left; 
+                   width:200px; 
+                   margin:0; 
+                   padding:5px; 
+                   color:#C0BAB6; 
+                   background-color:#001012; 
+                   border:1px solid #232323;}
+#header form #sf_submit{display:block; 
+                        float:right;
+                        width:70px; 
+                        font-size:12px; 
+                        font-weight:bold; 
+                        color:#FFFFFF; 
+                        background-color:#055593; 
+                        cursor:pointer;}
+
+#header nav{display:block; width:100%; margin:0; padding:20px 0; color:#C0BAB6; background-color:#232323; clear:both; }
+#header nav ul{padding:0 20px; }
+
+#header nav li{display:inline; padding-right:5px ; padding-left:5px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li.log{float:right;}
+
+#header nav li.log input{display:block;
+                         margin:0;
+                         width:70px; 
+                         font-size:12px; 
+                         font-weight:bold; 
+                         color:#FFFFFF; 
+                         background-color:#055593; 
+                         cursor:pointer;
+                         border:solid 1px #232323;
+                         padding:9px;
+
+} 
+#header nav li a{color:#C0BAB6; background-color:#232323;  padding-right:15px ; padding-left:15px;}
+#header nav li a:hover{color:#C0BAB6; background-color:#333333; padding-bottom:19px; padding-top:20px; padding-right:15px ; padding-left:15px; border-bottom:inset 1px black ;}
+#header nav li input:hover{color:#055593; background-color:#232323;}
+
+
+/*content*/
+#content{padding:20px 0; position:page; }
+
+
+/*fig content*/
+#content figure{ position:relative; overflow: hidden; margin:6px;  }
+#content figure img{width:303.3px; height:200px; }
+
+#content figure figcaption h2,#content figure figcaption p{ 
+                            position: absolute;  
+                            opacity: 0;
+                            bottom: 100%; 
+                            top: -30%;
+                            -webkit-transition: all 0.6s ease;
+                            -moz-transition:    all 0.6s ease;
+                            -o-transition:      all 0.6s ease;
+
+}
+
+#content figure:hover figcaption h2, #content figure:hover figcaption p{
+                                  opacity: 1;
+                                  top: 0;
+                                 }
+
+#content figure img{ border-bottom: solid #001012;
+                    opacity: 1;
+                    -webkit-transition: all 0.8s ease;
+                    
+                    
+                      }
+#content figure:hover img{ 
+                          border-bottom: solid  white;
+                          opacity: 0.3;
+                      }
+
+ 
+#content figure figcaption a{position:absolute;
+                             text-decoration:none; 
+                             color:#ffffff; 
+                             margin-left:90px;
+                             padding:1px 3px;
+                             border:solid #ffffff 1px;
+                             font-size:18px;
+                             opacity:0;
+                             bottom:20%;
+                            -webkit-transition: all 0.4s ease;
+                            -moz-transition:    all 0.4s ease;
+                            -o-transition:      all 0.4s ease;
+}
+#content figure:hover a{ bottom:30%;
+                         opacity:1;
+                         padding:6px 17px;
+}
+
+
+
+/*end fig cont*/
+
+#content input.showmore {text-align:center;
+                         opacity: 1;    
+                         font-family:'Bradley Hand ITC';
+                         width:100%; 
+                         font-size:20px; 
+                         padding:8px; 
+                         color:#FFFFFF;
+                         background-color:#055593;
+                         cursor:pointer;
+                         border:solid 1px #232323;
+                         border-radius:10px 10px;
+                         -webkit-transition: opacity 2s; /* Safari */
+                         transition: opacity 2s;
+}
+#content input.showmore:hover{background-color:#055580; opacity:0.6;  }
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: white solid;
+}
+
+/*footer*/
+#footer{padding:20px 0;}
+#footer p{margin:5px 0; padding:0;}
+#footer a{background-color:#055595; color:#FFFFFF; font-family:'Times New Roman'; padding:8px; cursor:pointer; }
+#footer a:visited{background-color: white; color: black;}

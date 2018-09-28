@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="Script.js"></script>
+    <link type="text/css" href="Style.css" rel="stylesheet"/>
+    <title>IQ Photography</title>
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper row1">
+        <header id="header" class="clear">
+            <div id="hgroup">
+                <h1><a href="#" title="Ideal Qoqaj">I Q</a>
+                    <a href="#"><img src="images/iconP.png" class="icon" alt="Foto nuk mund te shfaqet"/></a>
+                </h1>
+                <h2>PHOTOGRAPHY</h2>
+            </div>
+            <!--Krijimi i formulareve-->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Search :</legend>
+                    <input type="text" placeholder="Search Our Website&hellip;" id="myInput" onkeyup="myFunction()"  title="Type in a name" >
+                    <input type="submit" id="sf_submit" value="Search">
+                </fieldset>
+            </form>
+          
+<!-- implementimi i listes te parenditur -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">Share</a></li>
+                    <li class="last"><a href="mailto:ideal.q@hotmail.com">Contact</a></li>
+                    <li class="log">
+                                <input type="submit" class="ss" value="Log IN">
+                     </li>
+                    <li class="log">
+                                <input type="submit" class="ss" value="Sign UP" >
+                    </li>
+                </ul>
+            </nav>
+     </header>
+</div>
+<!-- content  perdorimi i imazheve si dhe i tabelave-->
+
+     <div id="content" class="clearcont">
+         <table id="myTable">
+             <tr>
+                 <td>Kosova
+                 <!--figurat dhe titujt e fig -->
+                     <figure class="cap-top">
+                         <img src="images/kosova0.jpg" alt="img01" />
+                         <figcaption>
+                             <h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p>
+                             <a href="images/kosova0.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/kosova1.jpg" alt="img01" />
+                         <figcaption>
+                             <h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p>
+                             <a href="images/kosova1.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/kosova2.jpg" alt="img01" />
+                         <figcaption>
+                             <h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p>
+                             </p></span>
+                             <a href="images/kosova2.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                </tr>
+                 <tr>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/kosova3.jpg" alt="img01" />
+                         <figcaption>
+                             <h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p>
+                             <a href="images/kosova3.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/kosova4.jpg" alt="img01" />
+                         <figcaption>
+                             <h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p>
+                             <a href="images/kosova4.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/kosova5.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Kosova</h2>
+                             <p>
+                                 Bukurite e Kosoves<br>
+                             </p></span>
+                             <a href="images/kosova5.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 </tr>
+
+
+                 <tr>
+                 <td>Shqiperia
+                     <figure class="cap-top">
+                         <img src="images/shqiperia0.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia0.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia1.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia1.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia2.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia2.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 </tr>
+                 <tr>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia3.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia3.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia4.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia4.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia5.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia5.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/shqiperia6.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Shqiperia</h2>
+                             <p>
+                                 Bukurite e Shqiperise<br>
+                             </p></span>
+                             <a href="images/shqiperia6.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+             </tr>
+             <tr>
+                 <td>Dasma
+                     <figure class="cap-top">
+                         <img src="images/dasma0.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma0.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma1.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma1.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma2.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma2.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma3.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma3.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma4.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma4.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma5.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma5.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <figure class="cap-top">
+                         <img src="images/dasma6.jpg" alt="img01" />
+                         <figcaption>
+                             <span><h2>Dasma Shqipetare</h2>
+                             <p>
+                                 Foto nga dasmat<br>
+                             </p></span>
+                             <a href="images/dasma6.jpg" data-gallery>View photo</a>
+
+                         </figcaption>
+                     </figure>
+                 </td>
+            </tr>
+        </table>
+        <input type="submit" class="showmore" value="show more ..." />        
+    </div>
+    <p> <a href="#header" class="fl_right button">Top</a>  </p>
+
+    <footer id="footer" class="clear">
+        <hr />
+        <p class="fl_left">Copyright &copy; - Ideal Qoqaj PHOTOGRAPHY- <a href="https://www.facebook.com/ideal.qoqaj?fref=ts">Ideal Qoqaj</a></p>
+        <p class="fl_right">Powered by <a href="https://www.facebook.com/blerton.r.rexha" title="Blerton Rexha">Blerton Rexha</a></p>
+    </footer>
+
+</body>
+</html>
